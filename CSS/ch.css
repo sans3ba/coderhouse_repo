@@ -1,0 +1,37 @@
+/*
+
+sintaxis
+
+selector {
+  atributo: valor;
+}
+
+-------------------
+
+"Espacio entre selector significa que el estilo
+se aplica en formato anidado, es decir todo lo que contiene
+el padre se aplica el estilo indicado."
+
+h1 h2 {
+  font-size: 50px;
+}
+
+"Separado por comas indica que estilo se aplica a ambos"
+
+h1, h2 {
+  font-size: 50px;
+}
+
+-----------------------
+
+
+"Hay distintas formas de tamaño medidas (%), absolutas (mm, cm, pulgadas)
+ y relativas: son medidas virtuales, que no pueden ser llevadas al plano real (px, )"
+
+
+
+*/
+
+body{
+  background-color: black;
+}
