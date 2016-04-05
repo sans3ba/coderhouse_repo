@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8"> 
+	<title>coderhouse 1</title>
+</head>
+
+<body>
+
+<h1>Links</h1>
+
+<!-- link externo -->
+<a href="http://www.coderhouse.com">Coderhouse</a>
+
+<!-- link interno, siempre va asociado al id del elemento dentro de la misma pagina en la cual nos queremos dirigir -->
+<a href="#footer">Coderhouse</a>
+
+<!-- link referenciales, link dentro o en otro directorio correspondiente al propio sitio -->
+<a href="/linkreferecnial.html">Link referencial</a>
+
+
+<h1>Medios</h1>
+<!-- Etiquetas de medios
+	autoplay : reproduccion automatica
+	loop : reproducciones infinitas
+	controls : controles de reproduccion
+	source : referenciamiento, permite dar a elegir distintos formatos de audio o video.
+
+-->
+<!-- tag de audio, referenciado directamente al archivo -->
+<audio src="direccion del archivo" controls></audio>
+
+<audio controls>
+	<source src="asdad.mp3" type="audio/mp3">
+	<source src="asdad.ogg" type="audio/ogg">
+
+</audio>
+
+<!-- tag video, referenciado al archivo y con tag control muestra controles de reproduccion-->
+<video src="https://www.youtube.com/embed/2kqZi3RoA5I" controls></video>
+
+
+<H1>FORMULARIOS</H1>
+<form action="hola.php" method="post">
+	<fieldset>
+		<legend>Select</legend> 
+		<select><!-- genera una lista con opciones para seleccionar en un dropmenu-->
+			<optgroup label="adultos"> <!-- agrupa las opciones disponibles -->
+				<option value="L">Large</option>
+				<option value="M">Medium</option>
+				<option value="S">Small</option>
+			</optgroup>
+		</select>
+		<input type="submit" value="Enviar">
+
+	</fieldset>
+
+
+
+	<fieldset>
+		<legend>Submit</legend> <!-- envia la informacion del formulario al destino indicado -->
+		<input type="submit" value="Enviar">
+
+	</fieldset>
+
+
+
+	<fieldset>
+		<legend>Radio</legend> <!-- posee un name="" el cual debe ser similar en ambos de manera de quedar linkeados , ademas de un id que me identifica la opcion seleccionada el cual se envía a traves del formulario -->
+		hombre: <input type="radio" name="sexo" id="h">
+		mujer: <input type="radio" name="sexo" id="m">
+
+	</fieldset>
+
+	<fieldset>
+		<legend>Datos personales</legend>
+		<label for="campo_nombre">Nombre:</label> <!-- un label siempre va asociado a un input en particular a traves del for="" , donde se debe ingresar el mismo nombre del name="" ingresado en el input -->
+		<input type="text" name="campo_nombre">
+	</fieldset>
+		
+	<fieldset>
+		<legend>Email</legend>
+		<label for="email">e-mail:</label> 
+		<input type="email" name="email" placeholder="ingresa tu correo">
+
+	</fieldset>
+
+	<fieldset>
+		<legend>Password</legend>
+		<label for="password">Contraseña:</label> 
+		<input type="password" name="password">
+
+	</fieldset>
+
+</form>
+
+<HR>
+
+<h1>TABLAS</h1>
+
+<!-- #tablas-->
+	<table>
+		<caption>Titulo tabla</caption>
+		<tr>
+			<td>sdasd</td>
+			<colgroup> aaa<!-- grupo de columnas -->
+				<col></col>
+			</colgroup>
+			<td>asd</td>
+			<td>asd</td>
+		</tr>
+
+	</table>
+
+<HR>
+<BR>
+<BR>
+	<h1>Nivel 1</h1>
+	<h2>Nivel 2</h2>
+	<h3>Nivel 3</h3>
+	<h6>Último</h6>
+
+	<p>Lorem ipsum dolor sit amet, <sub>adipiscing elit</sub><!-- subindice -->consectetur adipiscing elit, sed do eiusmod tempor 
+		<i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</i> <!-- formato italics, que debe ser aplciado en css -->incididunt ut labore et dolore magna<em>Lorem ipsum dolor sit amet, consectetur adipiscing elit</em> <!-- es para enfatizar el texto --> aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <sup>consectetur adipiscing elit</sup>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong> <!-- resaltado --> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b> <!-- reslatado que no se usa en codigo html, sino en css -->sint occaecat<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit</small> <!-- disminuir tamaño de fuentes --> cupidatat non proident, <del>Lorem ipsum dolor sit amet, consectetur adipiscing elit</del> <!-- tach el texto -->sunt <mark>Lorem ipsum dolor sit amet, consectetur adipiscing elit</mark> <!-- destacar el texto -->in culpa qui officia deserunt mollit anim id est laborum.</p> <!-- parrafo -->
+	<br>
+	<pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</pre> <!-- texto en una sola linea -->
+
+	<hr>  <!--incluye linea de separacion-->
+
+
+<footer id="footer">FOOTER</footer>
+
+</body>
+
+</html>
