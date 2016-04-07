@@ -1,12 +1,13 @@
 /*
 
-sintaxis
+Sintaxis Valor CSS
 
 selector {
   atributo: valor;
 }
 
 -------------------
+Asignación de atributo
 
 "Espacio entre selector significa que el estilo
 se aplica en formato anidado, es decir todo lo que contiene
@@ -23,15 +24,124 @@ h1, h2 {
 }
 
 -----------------------
+Dimensiones
 
+"Hay distintas formas de tamaño medidas (%), absolutas (mm,cm,inch)
+ y relativas: son medidas virtuales, que no pueden ser llevadas al plano real (px,em,rem)
+ em es la medida mas utilizada ya que cuando aumentan as fuentas, esta aumenta de
+ forma proporcional los textos, no así los pixeles px"
 
-"Hay distintas formas de tamaño medidas (%), absolutas (mm, cm, pulgadas)
- y relativas: son medidas virtuales, que no pueden ser llevadas al plano real (px, )"
+--------------------------
+Colores
 
+Texto
+"Se pueden definir color, a través de palabras las cuales son 17
+aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, orange,
+purple, red, silver, teal,white, yellow"
+
+body{
+  background-color: black;
+}
+
+RGB
+"Se puede definir desde 0 a 255 , siendo 0 el más oscuro y 255 el mas claro,
+siendo R: rojo , G: verde y B: azul. Se puede definir a través de % rgb(20%,25%,50%)"
+
+**RGBA , es exclusiva de CSS3 , se le incluye el A que es el Alpha.
+
+body{
+  background-color: rgb(80%,25%,30%);
+}
+
+Hexadecimal
+"Sintaxis #000000 (#RRGGBB) 6 digitos de a pares, los cuales significan el color
+Estando en un comienzo el par rojo, verde y azul consecutivamente."
+
+body{
+  background-color: #00FF00;
+}
+
+-----------------------------
+Texto
+
+Familia
+"font-family es la declaración de la fuente a la cual se le aplica al estilo. Se utilizan
+3 tipos de letras en caso de que el navegador no detecte algun tipo de letra y tenga respaldo
+para su uso."
+
+"font-style se usa para asignar estilo, como por ejemplo italic."
+
+"Font-weight no es estilo, es el grosor de la fuenta que nosotros le asignamos, se puede incrementar
+el valor en multiplos de 100, hasta 700."
+
+"Color es el argumento para cambiar el color de la fuente"
+
+h1{
+  font-family: Arial,Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: italic, oblique;
+  font-size: 26px;
+
+}
+
+Listas
+"Podemos asignarles estilos tal como a un parrafo o texto"
+-----------------------------
+Tipografía web
+
+Font siempre se carga antes del estilo en head, de lo contrario no lo encontrará
+
+"Font-face, define como se va a llamar la fuente font-family , y por cada recurso se debe crear un src
+
+@font-face {
+  font-family:
+  src: url()
+}
 
 
 */
 
+
 body{
-  background-color: black;
+  background-color: silver;
+}
+
+h1{
+
+  font-family: Arial,Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: oblique;
+  font-size: 26px;
+  color: green;
+}
+
+h2{
+  font-style: italic;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  line-height: 30px; /*espacio entre lineas */
+  word-spacing: 5px; /*espacio entre palabras */
+  letter-spacing: 5px; /* espacio entre letras*/
+  text-align: justify;
+  /*text-decoration: overline;*/
+  text-transform: uppercase;
+}
+
+
+ul li{
+  list-style: none; /* estilo de la lista no ordenada*/
+}
+
+ol li{
+  list-style:upper-roman; /* estilo de la lista ordenada*/
+}
+
+.fa {
+  color: red;
+}
+
+@font-face {
+
 }
